@@ -133,33 +133,3 @@ scales2.add(apple0).add(apple1).add(tomato0).add(apple0);
 console.log(scales2.getSumScale());
 console.log(scales2.getNameList());
 
-/*
-function funcScales<StorageEngine>(classRef: { new (): StorageEngine; }): any {
-    return {
-        'object': new classRef(), 
-        'add':function(product:Product):StorageEngine{
-            //debugger
-            this.object.addItem(product);
-            return this;
-        },
-        'getSumScale':function():number{
-            return this.object.getCount();
-        },
-        'getNameList':function():Array<string>{
-            //debugger;
-            let i:number = 0;
-            let nameList:Array<string>=[];
-            while(i>=0){
-                let item =this.object.getItem(i);
-                if(item!=undefined){
-                    i++;
-                    nameList.push(item.getName());
-                } else{
-                    i=-1;
-                }
-            }
-            return nameList;
-        } 
-    };
-}
-*/
